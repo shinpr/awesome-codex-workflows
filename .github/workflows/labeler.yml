@@ -1,0 +1,21 @@
+name: Labeler
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  label:
+    name: Apply labels
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@d632683dd7b4114ad314bca15554477dd762a938 # v4.2.0
+
+      - name: Apply path-based labels
+        uses: actions/labeler@5e5a2559bbca8764f50fc893e495f7f0ffdc179f # v5.0.0
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}

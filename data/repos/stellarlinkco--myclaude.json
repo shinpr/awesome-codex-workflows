@@ -1,0 +1,19 @@
+{
+  "name": "stellarlinkco/myclaude",
+  "url": "https://github.com/stellarlinkco/myclaude",
+  "summary": "Multi-agent orchestration workflow where Codex can be used as an execution backend.",
+  "codex_relation": "appendix",
+  "category": "Appendix: Cross-Agent Systems",
+  "tags": [
+    "cross-agent",
+    "orchestration"
+  ],
+  "signals": [
+    "agent-routing",
+    "executor-backend"
+  ],
+  "evidence": [
+    "Codex is supported as a backend, but the system is not Codex-first."
+  ],
+  "status": "active"
+}

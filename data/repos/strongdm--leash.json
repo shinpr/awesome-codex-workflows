@@ -1,0 +1,19 @@
+{
+  "name": "strongdm/leash",
+  "url": "https://github.com/strongdm/leash",
+  "summary": "Runtime containment and policy layer for AI coding agents, relevant to operating Codex workflows in controlled environments.",
+  "codex_relation": "adjacent",
+  "category": "Safety / Governance",
+  "tags": [
+    "sandbox",
+    "policy"
+  ],
+  "signals": [
+    "policy",
+    "monitoring"
+  ],
+  "evidence": [
+    "Adds containment and governance controls that are useful when operating Codex workflows."
+  ],
+  "status": "active"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "milisp/codexia",
+  "url": "https://github.com/milisp/codexia",
+  "summary": "Agent workstation for Codex CLI with task scheduling, worktree management, remote control, and skills management.",
+  "codex_relation": "adjacent",
+  "category": "Worktree / Session Infrastructure",
+  "tags": [
+    "workstation",
+    "scheduler"
+  ],
+  "signals": [
+    "task-scheduling",
+    "worktrees"
+  ],
+  "evidence": [
+    "Provides execution infrastructure around Codex sessions and worktree management."
+  ],
+  "status": "active"
+}

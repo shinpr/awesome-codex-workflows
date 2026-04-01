@@ -1,0 +1,34 @@
+name: Stale
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+jobs:
+  stale:
+    name: Mark stale items
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - name: Mark stale issues and pull requests
+        uses: actions/stale@5f78fbc83087c2a383dc4f3e7f32da267f51b0c4 # v9.1.0
+        with:
+          stale-issue-message: >
+            This issue has had no activity for 30 days.
+            If it still matters, add the missing context or leave a short update.
+          close-issue-message: >
+            Closing due to inactivity. It can be reopened with updated context.
+          stale-pr-message: >
+            This pull request has had no activity for 30 days.
+            If it is still active, leave a short update.
+          close-pr-message: >
+            Closing due to inactivity. It can be reopened if work resumes.
+          days-before-stale: 30
+          days-before-close: 7
+          stale-issue-label: stale
+          stale-pr-label: stale
+          exempt-issue-labels: pinned,security
+          exempt-pr-labels: pinned,security

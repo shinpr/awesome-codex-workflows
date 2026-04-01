@@ -1,0 +1,18 @@
+{
+  "name": "owner/repo",
+  "url": "https://github.com/owner/repo",
+  "summary": "Short neutral summary.",
+  "codex_relation": "primary",
+  "category": "Codex-Native Workflow Frameworks",
+  "tags": [
+    "workflow"
+  ],
+  "signals": [
+    "subagents",
+    "quality-gates"
+  ],
+  "evidence": [
+    "README explains the workflow stages and how Codex is used."
+  ],
+  "status": "active"
+}

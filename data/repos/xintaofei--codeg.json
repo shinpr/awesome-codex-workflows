@@ -1,0 +1,20 @@
+{
+  "name": "xintaofei/codeg",
+  "url": "https://github.com/xintaofei/codeg",
+  "summary": "Multi-agent coding workspace with worktrees, session persistence, MCP management, and integrated Codex support.",
+  "codex_relation": "adjacent",
+  "category": "Worktree / Session Infrastructure",
+  "tags": [
+    "workspace",
+    "sessions"
+  ],
+  "signals": [
+    "worktrees",
+    "session-management",
+    "mcp"
+  ],
+  "evidence": [
+    "Provides worktree, session, MCP, and agent-management infrastructure that can support Codex workflows, even though it is not Codex-only."
+  ],
+  "status": "active"
+}

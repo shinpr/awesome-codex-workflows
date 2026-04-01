@@ -1,0 +1,67 @@
+name: Repository recommendation
+description: Recommend a repository for inclusion in the list
+title: "[Repo]: "
+labels:
+  - candidate
+body:
+  - type: input
+    id: repo_url
+    attributes:
+      label: Repository URL
+      description: GitHub repository URL
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+
+  - type: input
+    id: summary
+    attributes:
+      label: One-line summary
+      description: Short neutral description of the repository
+      placeholder: Codex CLI workflow framework with ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: codex_relevance
+    attributes:
+      label: Why is this Codex-first or Codex-primary?
+      description: Explain why Codex is a primary target rather than an optional backend
+      placeholder: README/About text, commands, docs, or installation instructions that show Codex is central
+    validations:
+      required: true
+
+  - type: textarea
+    id: workflow_evidence
+    attributes:
+      label: Workflow or orchestration evidence
+      description: Point to the workflow model and the relevant primitives
+      placeholder: Phases, subagents, worktrees, review gates, quality gates, orchestration commands, delegation, session management, etc.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Suggested category
+      options:
+        - Official Foundations
+        - Codex-Native Workflow Frameworks
+        - Codex Workflow Extensions
+        - Worktree / Session Infrastructure
+        - Safety / Governance
+        - Appendix: Cross-Agent Systems
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I checked that this repository is not already listed
+          required: true
+        - label: I checked that the repository is public and accessible
+          required: true
+        - label: I included enough context to evaluate it without extra digging
+          required: true

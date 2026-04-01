@@ -1,0 +1,21 @@
+documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - README.md
+          - CONTRIBUTING.md
+          - .github/**/*.md
+
+github:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .github/**
+
+assets:
+  - changed-files:
+      - any-glob-to-any-file:
+          - assets/**
+
+license:
+  - changed-files:
+      - any-glob-to-any-file:
+          - LICENSE

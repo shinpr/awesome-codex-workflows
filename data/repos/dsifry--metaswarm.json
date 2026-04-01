@@ -1,0 +1,19 @@
+{
+  "name": "dsifry/metaswarm",
+  "url": "https://github.com/dsifry/metaswarm",
+  "summary": "Multi-agent orchestration framework that can delegate implementation and review work to Codex CLI.",
+  "codex_relation": "appendix",
+  "category": "Appendix: Cross-Agent Systems",
+  "tags": [
+    "cross-agent",
+    "orchestration"
+  ],
+  "signals": [
+    "agent-roles",
+    "quality-gates"
+  ],
+  "evidence": [
+    "Codex is supported, but the repository is broader than Codex-first workflow curation."
+  ],
+  "status": "active"
+}

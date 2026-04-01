@@ -1,0 +1,19 @@
+{
+  "name": "Yeachan-Heo/oh-my-codex",
+  "url": "https://github.com/Yeachan-Heo/oh-my-codex",
+  "summary": "Workflow layer for Codex CLI with staged execution, autopilot patterns, and parallel worktree-oriented development.",
+  "codex_relation": "primary",
+  "category": "Codex-Native Workflow Frameworks",
+  "tags": [
+    "workflow-layer",
+    "worktrees"
+  ],
+  "signals": [
+    "phase-pipeline",
+    "worktrees"
+  ],
+  "evidence": [
+    "Presents itself as a workflow layer on top of Codex CLI with staged execution features."
+  ],
+  "status": "active"
+}

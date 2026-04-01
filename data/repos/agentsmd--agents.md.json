@@ -1,0 +1,18 @@
+{
+  "name": "agentsmd/agents.md",
+  "url": "https://github.com/agentsmd/agents.md",
+  "summary": "Open format for `AGENTS.md`, useful as a shared instruction-layer reference in the Codex workflow ecosystem.",
+  "codex_relation": "primary",
+  "category": "Official Foundations",
+  "tags": [
+    "agents-md",
+    "spec"
+  ],
+  "signals": [
+    "instruction-layer"
+  ],
+  "evidence": [
+    "Provides an open format for agent guidance files used across coding-agent workflows."
+  ],
+  "status": "active"
+}
