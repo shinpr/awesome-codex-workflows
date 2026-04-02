@@ -7,7 +7,8 @@
     "generate:readme": "node scripts/generate-readme.mjs",
     "check:data": "node scripts/validate-repos.mjs",
     "check:readme": "node scripts/check-readme.mjs",
-    "check:all": "node scripts/validate-repos.mjs && node scripts/check-readme.mjs && npm run lint:awesome"
+    "check:all": "node scripts/validate-repos.mjs && node scripts/check-readme.mjs",
+    "check:ci": "node scripts/validate-repos.mjs && node scripts/check-readme.mjs && npm run lint:awesome"
   },
   "devDependencies": {
     "awesome-lint": "2.2.3"
