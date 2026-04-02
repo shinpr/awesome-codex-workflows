@@ -36,7 +36,7 @@ jobs:
         run: node scripts/check-readme.mjs
 
       - name: Run awesome-lint
-        run: npm run lint:awesome
+        run: npm run check:ci
 
   links:
     name: Link Check
