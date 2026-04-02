@@ -92,22 +92,5 @@ function orderRepos(category, repos) {
     });
   }
 
-  if (category === "Codex Workflow Frameworks") {
-    const priority = new Map([
-      ["shinpr/codex-workflows", 0]
-    ]);
-
-    return [...repos].sort((a, b) => {
-      const aPriority = priority.get(a.name);
-      const bPriority = priority.get(b.name);
-
-      if (aPriority !== undefined || bPriority !== undefined) {
-        return (aPriority ?? Number.MAX_SAFE_INTEGER) - (bPriority ?? Number.MAX_SAFE_INTEGER);
-      }
-
-      return a.name.localeCompare(b.name, "en");
-    });
-  }
-
   return [...repos].sort((a, b) => a.name.localeCompare(b.name, "en"));
 }
