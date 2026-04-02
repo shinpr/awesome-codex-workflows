@@ -1,5 +1,5 @@
 {
-  "name": "openai/codex-plugin-cc",
+  "name": "OpenAI/codex-plugin-cc",
   "url": "https://github.com/openai/codex-plugin-cc",
   "summary": "Official Claude Code plugin that brings Codex into Claude-centered workflows for review, adversarial review, delegated rescue tasks, and optional review gates.",
   "codex_relation": "appendix",

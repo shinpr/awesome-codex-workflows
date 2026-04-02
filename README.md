@@ -59,7 +59,7 @@ These repositories are useful comparisons or integrations. Some are official, bu
 - [catlog22/Claude-Code-Workflow](https://github.com/catlog22/Claude-Code-Workflow) - JSON-driven multi-agent workflow framework that turns Claude-centered development into staged planning, execution, and review pipelines with Codex and other CLIs as interchangeable workers.
 - [dsifry/metaswarm](https://github.com/dsifry/metaswarm) - Self-improving multi-agent orchestration framework that runs spec-driven work through review gates, adversarial execution loops, and git-native knowledge capture, with optional Codex delegation.
 - [kingbootoshi/codex-orchestrator](https://github.com/kingbootoshi/codex-orchestrator) - Claude Code plugin and CLI for offloading long-running or parallel coding work to Codex jobs that can be monitored, redirected, and captured through tmux sessions.
-- [openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc) - Official Claude Code plugin that brings Codex into Claude-centered workflows for review, adversarial review, delegated rescue tasks, and optional review gates.
+- [OpenAI/codex-plugin-cc](https://github.com/openai/codex-plugin-cc) - Official Claude Code plugin that brings Codex into Claude-centered workflows for review, adversarial review, delegated rescue tasks, and optional review gates.
 - [stellarlinkco/myclaude](https://github.com/stellarlinkco/myclaude) - Claude-centered multi-agent workflow system that routes execution to Codex, Gemini, Claude, or OpenCode backends through reusable modules like do, omo, BMAD, and SPARV.
 
 <!-- GENERATED:REPO-LIST:END -->
