@@ -14,7 +14,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Mark stale issues and pull requests
-        uses: actions/stale@5f78fbc83087c2a383dc4f3e7f32da267f51b0c4 # v9.1.0
+        uses: actions/stale@5bef64f19d7facfb25b37b414482c7164d639639 # v9.1.0
         with:
           stale-issue-message: >
             This issue has had no activity for 30 days.
