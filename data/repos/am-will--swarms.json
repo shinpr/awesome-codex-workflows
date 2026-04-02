@@ -1,0 +1,21 @@
+{
+  "name": "am-will/swarms",
+  "url": "https://github.com/am-will/swarms",
+  "summary": "Dependency-aware workflow skills for Codex and Claude that make parallel execution safer through explicit `depends_on` plans, wave execution, and TDD-oriented validation.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "parallel-execution",
+    "planning"
+  ],
+  "signals": [
+    "subagents",
+    "depends-on-plans",
+    "tdd"
+  ],
+  "evidence": [
+    "Defines explicit swarm-planner and parallel-task skills with dependency-aware task plans and wave-based execution.",
+    "Subagent execution requires validation evidence and plan updates, making the workflow more concrete than a generic skill pack."
+  ],
+  "status": "active"
+}

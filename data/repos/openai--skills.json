@@ -1,9 +1,9 @@
 {
   "name": "OpenAI/skills",
   "url": "https://github.com/openai/skills",
-  "summary": "Official skill catalog for Codex, including reusable instructions, scripts, and resources.",
+  "summary": "Official skill catalog for Codex, showing how reusable instructions, scripts, and resources are packaged into portable workflow building blocks.",
   "codex_relation": "primary",
-  "category": "Official Foundations",
+  "category": "Foundations & Standards",
   "tags": [
     "official",
     "skills"

@@ -1,0 +1,21 @@
+{
+  "name": "staticpayload/oh-my-codex",
+  "url": "https://github.com/staticpayload/oh-my-codex",
+  "summary": "Codex-native orchestration product built around `.omx/` state, review queues, and tmux team runtime so long-running work can be resumed instead of reassembled from chat history.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "durable-state",
+    "team-runtime"
+  ],
+  "signals": [
+    "phase-planning",
+    "review-queue",
+    "mcp"
+  ],
+  "evidence": [
+    "Implements a real Codex-native workflow product with durable .omx state, task graph, review queue, and tmux-aware team execution.",
+    "Ships reusable skills, agent templates, hooks, plugins, and runtime docs that make the workflow model inspectable and reusable."
+  ],
+  "status": "active"
+}

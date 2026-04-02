@@ -6,6 +6,20 @@ export const endMarker = "<!-- GENERATED:REPO-LIST:END -->";
 export function renderGeneratedRepoSection(root = process.cwd()) {
   const entries = loadRepos(root).map(({ repo }) => repo);
   const byCategory = new Map(categories.map((category) => [category, []]));
+  const descriptions = new Map([
+    [
+      "Foundations & Standards",
+      "Official building blocks appear here alongside ecosystem standards that help make Codex workflow repos interoperable."
+    ],
+    [
+      "Codex Workflow Frameworks",
+      "These are the repositories where the workflow itself is the product. The two `oh-my-codex` entries are distinct projects with different workflow models."
+    ],
+    [
+      "Cross-Agent References",
+      "These repositories are useful comparisons or integrations. Some are official, but the point of view is broader than Codex-first workflow design."
+    ]
+  ]);
 
   for (const repo of entries) {
     byCategory.get(repo.category).push(repo);
@@ -16,10 +30,10 @@ export function renderGeneratedRepoSection(root = process.cwd()) {
   for (const category of categories) {
     const repos = byCategory.get(category);
     sections.push(`## ${category}`);
-
-    if (category === "Appendix: Cross-Agent Systems") {
+    const description = descriptions.get(category);
+    if (description) {
       sections.push("");
-      sections.push("These repositories are useful references, but Codex is not the main point of view.");
+      sections.push(description);
     }
 
     const ordered = orderRepos(category, repos);
@@ -59,11 +73,28 @@ export function generateReadmeContent(readme, root = process.cwd()) {
 }
 
 function orderRepos(category, repos) {
-  if (category === "Official Foundations") {
+  if (category === "Foundations & Standards") {
     const priority = new Map([
       ["OpenAI/codex", 0],
       ["OpenAI/skills", 1],
       ["agentsmd/agents.md", 2]
+    ]);
+
+    return [...repos].sort((a, b) => {
+      const aPriority = priority.get(a.name);
+      const bPriority = priority.get(b.name);
+
+      if (aPriority !== undefined || bPriority !== undefined) {
+        return (aPriority ?? Number.MAX_SAFE_INTEGER) - (bPriority ?? Number.MAX_SAFE_INTEGER);
+      }
+
+      return a.name.localeCompare(b.name, "en");
+    });
+  }
+
+  if (category === "Codex Workflow Frameworks") {
+    const priority = new Map([
+      ["shinpr/codex-workflows", 0]
     ]);
 
     return [...repos].sort((a, b) => {

@@ -1,9 +1,9 @@
 {
   "name": "stellarlinkco/myclaude",
   "url": "https://github.com/stellarlinkco/myclaude",
-  "summary": "Multi-agent orchestration workflow where Codex can be used as an execution backend.",
+  "summary": "Claude-centered multi-agent workflow system that routes execution to Codex, Gemini, Claude, or OpenCode backends through reusable modules like do, omo, BMAD, and SPARV.",
   "codex_relation": "appendix",
-  "category": "Appendix: Cross-Agent Systems",
+  "category": "Cross-Agent References",
   "tags": [
     "cross-agent",
     "orchestration"

@@ -2,12 +2,10 @@ import fs from "node:fs";
 import path from "node:path";
 
 export const categories = [
-  "Official Foundations",
-  "Codex-Native Workflow Frameworks",
-  "Codex Workflow Extensions",
-  "Worktree / Session Infrastructure",
-  "Safety / Governance",
-  "Appendix: Cross-Agent Systems"
+  "Foundations & Standards",
+  "Codex Workflow Frameworks",
+  "Workflow Infrastructure & Design",
+  "Cross-Agent References"
 ];
 
 export const codexRelations = ["primary", "adjacent", "appendix"];

@@ -1,0 +1,20 @@
+{
+  "name": "kingbootoshi/codex-orchestrator",
+  "url": "https://github.com/kingbootoshi/codex-orchestrator",
+  "summary": "Claude Code plugin and CLI for offloading long-running or parallel coding work to Codex jobs that can be monitored, redirected, and captured through tmux sessions.",
+  "codex_relation": "appendix",
+  "category": "Cross-Agent References",
+  "tags": [
+    "cross-agent",
+    "tmux"
+  ],
+  "signals": [
+    "parallel-jobs",
+    "session-steering"
+  ],
+  "evidence": [
+    "Provides Codex agent spawning, output capture, and mid-task steering through tmux-backed jobs.",
+    "The orchestration point of view is Claude Code first, so it fits better as a reference than a Codex-first framework."
+  ],
+  "status": "active"
+}

@@ -1,9 +1,9 @@
 {
   "name": "Yeachan-Heo/oh-my-codex",
   "url": "https://github.com/Yeachan-Heo/oh-my-codex",
-  "summary": "Workflow layer for Codex CLI with staged execution, autopilot patterns, and parallel worktree-oriented development.",
+  "summary": "Workflow layer for Codex organized around OMX modes like `$deep-interview`, `$ralplan`, `$ralph`, and `$team`, giving one repeatable path from clarification to completion.",
   "codex_relation": "primary",
-  "category": "Codex-Native Workflow Frameworks",
+  "category": "Codex Workflow Frameworks",
   "tags": [
     "workflow-layer",
     "worktrees"
@@ -13,7 +13,7 @@
     "worktrees"
   ],
   "evidence": [
-    "Presents itself as a workflow layer on top of Codex CLI with staged execution features."
+    "Presents itself as a workflow layer on top of Codex with staged execution features."
   ],
   "status": "active"
 }

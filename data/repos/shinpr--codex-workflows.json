@@ -1,9 +1,9 @@
 {
   "name": "shinpr/codex-workflows",
   "url": "https://github.com/shinpr/codex-workflows",
-  "summary": "End-to-end Codex CLI workflows built around specialized subagents, design artifacts, tests, and quality checks.",
+  "summary": "Codex workflows organized around user-value slices so features get designed, tested, and integrated earlier instead of breaking at the end; each slice is grounded in design docs, test skeletons, TDD, and quality gates.",
   "codex_relation": "primary",
-  "category": "Codex-Native Workflow Frameworks",
+  "category": "Codex Workflow Frameworks",
   "tags": [
     "workflow",
     "subagents"

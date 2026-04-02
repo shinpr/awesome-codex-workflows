@@ -1,4 +1,7 @@
 .DS_Store
 node_modules/
+.claude/
+.codex/
+.agents/
 tmp/*
 !tmp/.gitkeep
