@@ -1,0 +1,20 @@
+{
+  "name": "OpenAI/codex-plugin-cc",
+  "url": "https://github.com/openai/codex-plugin-cc",
+  "summary": "Official Claude Code plugin that brings Codex into Claude-centered workflows for review, adversarial review, delegated rescue tasks, and optional review gates.",
+  "codex_relation": "appendix",
+  "category": "Cross-Agent References",
+  "tags": [
+    "official",
+    "plugin"
+  ],
+  "signals": [
+    "review-gate",
+    "delegation"
+  ],
+  "evidence": [
+    "Official OpenAI plugin exposing Codex review and rescue flows inside Claude Code.",
+    "Useful as a cross-agent reference, but the workflow point of view remains Claude Code rather than Codex-native orchestration."
+  ],
+  "status": "active"
+}

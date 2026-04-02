@@ -1,9 +1,9 @@
 {
   "name": "OpenAI/codex",
   "url": "https://github.com/openai/codex",
-  "summary": "Official Codex CLI repository and the base runtime for Codex-oriented workflows.",
+  "summary": "Official Codex repository, providing the execution runtime that Codex-native workflow layers and orchestration tools build on.",
   "codex_relation": "primary",
-  "category": "Official Foundations",
+  "category": "Foundations & Standards",
   "tags": [
     "official",
     "runtime"
@@ -12,7 +12,7 @@
     "codex-cli"
   ],
   "evidence": [
-    "The official Codex CLI implementation that other Codex workflow repositories build on."
+    "The official Codex implementation that other Codex workflow repositories build on."
   ],
   "status": "active"
 }

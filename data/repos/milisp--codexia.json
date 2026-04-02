@@ -1,9 +1,9 @@
 {
   "name": "milisp/codexia",
   "url": "https://github.com/milisp/codexia",
-  "summary": "Agent workstation for Codex CLI with task scheduling, worktree management, remote control, and skills management.",
+  "summary": "Tauri-based desktop console for Codex and Claude Code, built to run many agent tasks at once with scheduling, worktrees, remote control, and a headless web companion.",
   "codex_relation": "adjacent",
-  "category": "Worktree / Session Infrastructure",
+  "category": "Workflow Infrastructure & Design",
   "tags": [
     "workstation",
     "scheduler"

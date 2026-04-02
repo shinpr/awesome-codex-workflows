@@ -1,0 +1,21 @@
+{
+  "name": "SaehwanPark/meta-harness",
+  "url": "https://github.com/SaehwanPark/meta-harness",
+  "summary": "Codex-native workflow design kit for turning orchestration ideas into reusable specialist skills, team specs, and file-based handoffs instead of one-off prompts.",
+  "codex_relation": "adjacent",
+  "category": "Workflow Infrastructure & Design",
+  "tags": [
+    "workflow-design",
+    "skills"
+  ],
+  "signals": [
+    "artifact-handoffs",
+    "team-specs",
+    "workflow-patterns"
+  ],
+  "evidence": [
+    "Provides a Codex-native harness skill for designing repo-local workflows, specialist roles, and deterministic handoff artifacts.",
+    "Uses explicit architecture patterns, role boundaries, and _workspace artifact contracts rather than a generic prompt pack."
+  ],
+  "status": "active"
+}

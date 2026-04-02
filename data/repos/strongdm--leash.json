@@ -1,9 +1,9 @@
 {
   "name": "strongdm/leash",
   "url": "https://github.com/strongdm/leash",
-  "summary": "Runtime containment and policy layer for AI coding agents, relevant to operating Codex workflows in controlled environments.",
+  "summary": "Runtime containment and policy layer for AI coding agents that makes Codex workflows safer by wrapping agents in monitored containers and enforcing Cedar policies in real time.",
   "codex_relation": "adjacent",
-  "category": "Safety / Governance",
+  "category": "Workflow Infrastructure & Design",
   "tags": [
     "sandbox",
     "policy"

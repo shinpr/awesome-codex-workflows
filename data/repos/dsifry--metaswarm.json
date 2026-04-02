@@ -1,9 +1,9 @@
 {
   "name": "dsifry/metaswarm",
   "url": "https://github.com/dsifry/metaswarm",
-  "summary": "Multi-agent orchestration framework that can delegate implementation and review work to Codex CLI.",
+  "summary": "Self-improving multi-agent orchestration framework that runs spec-driven work through review gates, adversarial execution loops, and git-native knowledge capture, with optional Codex delegation.",
   "codex_relation": "appendix",
-  "category": "Appendix: Cross-Agent Systems",
+  "category": "Cross-Agent References",
   "tags": [
     "cross-agent",
     "orchestration"

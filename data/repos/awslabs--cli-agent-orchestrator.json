@@ -1,0 +1,21 @@
+{
+  "name": "awslabs/cli-agent-orchestrator",
+  "url": "https://github.com/awslabs/cli-agent-orchestrator",
+  "summary": "Hierarchical tmux-based multi-agent orchestrator that coordinates supervisor and worker sessions across agent CLIs, with dedicated Codex support in a broader cross-CLI system.",
+  "codex_relation": "appendix",
+  "category": "Cross-Agent References",
+  "tags": [
+    "multi-agent",
+    "tmux"
+  ],
+  "signals": [
+    "supervisor-workers",
+    "mcp",
+    "provider-abstraction"
+  ],
+  "evidence": [
+    "Implements supervisor and worker orchestration patterns with isolated tmux sessions and MCP coordination.",
+    "Includes dedicated Codex provider documentation, but the repository is broader than Codex-first workflow curation."
+  ],
+  "status": "active"
+}

@@ -1,9 +1,9 @@
 {
   "name": "catlog22/Claude-Code-Workflow",
   "url": "https://github.com/catlog22/Claude-Code-Workflow",
-  "summary": "Multi-agent workflow framework with Codex support alongside other coding CLIs.",
+  "summary": "JSON-driven multi-agent workflow framework that turns Claude-centered development into staged planning, execution, and review pipelines with Codex and other CLIs as interchangeable workers.",
   "codex_relation": "appendix",
-  "category": "Appendix: Cross-Agent Systems",
+  "category": "Cross-Agent References",
   "tags": [
     "cross-agent",
     "workflow"
