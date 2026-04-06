@@ -31,19 +31,22 @@ This list is intentionally opinionated. It favors repositories that make their w
 Official building blocks appear here alongside ecosystem standards that help make Codex workflow repos interoperable.
 
 - [OpenAI/codex](https://github.com/openai/codex) - Official Codex repository, providing the execution runtime that Codex-native workflow layers and orchestration tools build on.
-- [OpenAI/skills](https://github.com/openai/skills) - Official skill catalog for Codex, showing how reusable instructions, scripts, and resources are packaged into portable workflow building blocks.
-- [agentsmd/agents.md](https://github.com/agentsmd/agents.md) - Community-led `AGENTS.md` format that gives Codex and neighboring tools a shared instruction-layer contract for repository-local workflow guidance.
+- [OpenAI/skills](https://github.com/openai/skills) - Official skill catalog for Codex, showing how reusable instructions, scripts, and resources are packaged into workflow building blocks.
+- [agentsmd/agents.md](https://github.com/agentsmd/agents.md) - Community-led `AGENTS.md` format that gives Codex and neighboring tools a shared way to express repository-local workflow guidance.
 
 ## Codex Workflow Frameworks
 
-These are the repositories where the workflow itself is the product. The two `oh-my-codex` entries are distinct projects with different workflow models.
+These are the repositories where the workflow itself is the product: planning, execution, review, and handoff are built into the system rather than added on around it.
 
 - [am-will/swarms](https://github.com/am-will/swarms) - Dependency-aware workflow skills for Codex and Claude that make parallel execution safer through explicit `depends_on` plans, wave execution, and TDD-oriented validation.
+- [Phlegonlabs/Harness-Engineering-skills](https://github.com/Phlegonlabs/Harness-Engineering-skills) - Repo-backed PRD-to-code workflow skills for Claude and Codex that turn planning into durable project state with phase gates, approval stops, and validation instead of free-form prompt chains.
 - [shinpr/codex-workflows](https://github.com/shinpr/codex-workflows) - Codex workflows organized around user-value slices so features get designed, tested, and integrated earlier instead of breaking at the end; each slice is grounded in design docs, test skeletons, TDD, and quality gates.
 - [staticpayload/oh-my-codex](https://github.com/staticpayload/oh-my-codex) - Codex-native orchestration product built around `.omx/` state, review queues, and tmux team runtime so long-running work can be resumed instead of reassembled from chat history.
 - [Yeachan-Heo/oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) - Workflow layer for Codex organized around OMX modes like `$deep-interview`, `$ralplan`, `$ralph`, and `$team`, giving one repeatable path from clarification to completion.
 
 ## Workflow Infrastructure & Design
+
+These repositories help people design, support, or operate Codex workflows, even when the workflow itself lives elsewhere.
 
 - [milisp/codexia](https://github.com/milisp/codexia) - Tauri-based desktop console for Codex and Claude Code, built to run many agent tasks at once with scheduling, worktrees, remote control, and a headless web companion.
 - [SaehwanPark/meta-harness](https://github.com/SaehwanPark/meta-harness) - Codex-native workflow design kit for turning orchestration ideas into reusable specialist skills, team specs, and file-based handoffs instead of one-off prompts.
@@ -57,7 +60,9 @@ These repositories are useful comparisons or integrations. Some are official, bu
 
 - [awslabs/cli-agent-orchestrator](https://github.com/awslabs/cli-agent-orchestrator) - Hierarchical tmux-based multi-agent orchestrator that coordinates supervisor and worker sessions across agent CLIs, with dedicated Codex support in a broader cross-CLI system.
 - [catlog22/Claude-Code-Workflow](https://github.com/catlog22/Claude-Code-Workflow) - JSON-driven multi-agent workflow framework that turns Claude-centered development into staged planning, execution, and review pipelines with Codex and other CLIs as interchangeable workers.
+- [ComposioHQ/agent-orchestrator](https://github.com/ComposioHQ/agent-orchestrator) - Plugin-based orchestration control plane that isolates each coding task in its own worktree and routes CI or review reactions back through configurable runtime, tracker, and notifier slots.
 - [dsifry/metaswarm](https://github.com/dsifry/metaswarm) - Self-improving multi-agent orchestration framework that runs spec-driven work through review gates, adversarial execution loops, and git-native knowledge capture, with optional Codex delegation.
+- [jonwiggins/optio](https://github.com/jonwiggins/optio) - PR-lifecycle worker system that turns CI failures, review requests, and merge conflicts into explicit resume actions, pushing tasks from intake to merged PR through a BullMQ-backed state machine.
 - [kingbootoshi/codex-orchestrator](https://github.com/kingbootoshi/codex-orchestrator) - Claude Code plugin and CLI for offloading long-running or parallel coding work to Codex jobs that can be monitored, redirected, and captured through tmux sessions.
 - [OpenAI/codex-plugin-cc](https://github.com/openai/codex-plugin-cc) - Official Claude Code plugin that brings Codex into Claude-centered workflows for review, adversarial review, delegated rescue tasks, and optional review gates.
 - [stellarlinkco/myclaude](https://github.com/stellarlinkco/myclaude) - Claude-centered multi-agent workflow system that routes execution to Codex, Gemini, Claude, or OpenCode backends through reusable modules like do, omo, BMAD, and SPARV.
@@ -70,7 +75,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Before proposing an addition, check that:
 
-- Codex is a primary target, not only an optional backend.
+- Codex is a first-class workflow target, not just an optional backend.
 - The repository shows an actual workflow or orchestration model.
 - The project is public, accessible, and documented enough to evaluate.
 

@@ -1,0 +1,21 @@
+{
+  "name": "jonwiggins/optio",
+  "url": "https://github.com/jonwiggins/optio",
+  "summary": "PR-lifecycle worker system that turns CI failures, review requests, and merge conflicts into explicit resume actions, pushing tasks from intake to merged PR through a BullMQ-backed state machine.",
+  "codex_relation": "appendix",
+  "category": "Cross-Agent References",
+  "tags": [
+    "cross-agent",
+    "pr-lifecycle"
+  ],
+  "signals": [
+    "feedback-loop",
+    "kubernetes",
+    "worktrees"
+  ],
+  "evidence": [
+    "Implements explicit watcher actions like `resume_ci_failure`, `resume_review`, `resume_conflicts`, `launch_review`, and `auto_merge` on top of PR polling and worktree isolation.",
+    "Supports Codex as a real agent adapter, including task-file setup, auth modes, and structured result parsing inside a broader completion-loop product."
+  ],
+  "status": "active"
+}

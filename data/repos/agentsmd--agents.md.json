@@ -1,7 +1,7 @@
 {
   "name": "agentsmd/agents.md",
   "url": "https://github.com/agentsmd/agents.md",
-  "summary": "Community-led `AGENTS.md` format that gives Codex and neighboring tools a shared instruction-layer contract for repository-local workflow guidance.",
+  "summary": "Community-led `AGENTS.md` format that gives Codex and neighboring tools a shared way to express repository-local workflow guidance.",
   "codex_relation": "primary",
   "category": "Foundations & Standards",
   "tags": [

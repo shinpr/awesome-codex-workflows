@@ -13,7 +13,11 @@ export function renderGeneratedRepoSection(root = process.cwd()) {
     ],
     [
       "Codex Workflow Frameworks",
-      "These are the repositories where the workflow itself is the product. The two `oh-my-codex` entries are distinct projects with different workflow models."
+      "These are the repositories where the workflow itself is the product: planning, execution, review, and handoff are built into the system rather than added on around it."
+    ],
+    [
+      "Workflow Infrastructure & Design",
+      "These repositories help people design, support, or operate Codex workflows, even when the workflow itself lives elsewhere."
     ],
     [
       "Cross-Agent References",
