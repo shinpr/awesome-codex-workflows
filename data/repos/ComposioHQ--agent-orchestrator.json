@@ -1,0 +1,21 @@
+{
+  "name": "ComposioHQ/agent-orchestrator",
+  "url": "https://github.com/ComposioHQ/agent-orchestrator",
+  "summary": "Plugin-based orchestration control plane that isolates each coding task in its own worktree and routes CI or review reactions back through configurable runtime, tracker, and notifier slots.",
+  "codex_relation": "appendix",
+  "category": "Cross-Agent References",
+  "tags": [
+    "cross-agent",
+    "orchestration"
+  ],
+  "signals": [
+    "worktrees",
+    "feedback-loop",
+    "dashboard"
+  ],
+  "evidence": [
+    "Uses isolated git worktrees plus reaction rules like `ci-failed` and `changes-requested` to send follow-up work back into the same session.",
+    "Implements Codex as a real agent plugin inside a broader control plane with pluggable runtime, workspace, tracker, SCM, notifier, and terminal slots."
+  ],
+  "status": "active"
+}

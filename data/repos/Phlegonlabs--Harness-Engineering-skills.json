@@ -1,0 +1,21 @@
+{
+  "name": "Phlegonlabs/Harness-Engineering-skills",
+  "url": "https://github.com/Phlegonlabs/Harness-Engineering-skills",
+  "summary": "Repo-backed PRD-to-code workflow skills for Claude and Codex that turn planning into durable project state with phase gates, approval stops, and validation instead of free-form prompt chains.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "prd-to-code",
+    "skills"
+  ],
+  "signals": [
+    "phase-gates",
+    "repo-backed-state",
+    "validation"
+  ],
+  "evidence": [
+    "Ships a harness-engineering-orchestrator skill that writes delivery state back into repo artifacts like PRD, architecture, progress, and .harness/state.json.",
+    "Defines a repeatable Project Plan to Delivery Phase to Milestone to Task to Validation loop with explicit approval stops and resumable execution."
+  ],
+  "status": "active"
+}
