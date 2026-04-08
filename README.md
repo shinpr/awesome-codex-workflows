@@ -49,7 +49,7 @@ These are the repositories where the workflow itself is the product: planning, e
 These repositories help people design, support, or operate Codex workflows, even when the workflow itself lives elsewhere.
 
 - [milisp/codexia](https://github.com/milisp/codexia) - Tauri-based desktop console for Codex and Claude Code, built to run many agent tasks at once with scheduling, worktrees, remote control, and a headless web companion.
-- [SaehwanPark/meta-harness](https://github.com/SaehwanPark/meta-harness) - Codex-native workflow design kit for turning orchestration ideas into reusable specialist skills, team specs, and file-based handoffs instead of one-off prompts.
+- [SaehwanPark/meta-harness](https://github.com/SaehwanPark/meta-harness) - Codex-oriented adaptation of revfactory/harness for turning orchestration ideas into reusable specialist skills, team specs, and file-based handoffs instead of one-off prompts.
 - [shouc/agentflow](https://github.com/shouc/agentflow) - Graph-based orchestration runtime for Codex, Claude, and Kimi that treats workflows as dependency graphs, enabling fanout, merge, iterative loops, worktrees, and remote execution.
 - [strongdm/leash](https://github.com/strongdm/leash) - Runtime containment and policy layer for AI coding agents that makes Codex workflows safer by wrapping agents in monitored containers and enforcing Cedar policies in real time.
 - [xintaofei/codeg](https://github.com/xintaofei/codeg) - Shared coding workspace for multi-agent teams, tying together session aggregation, worktrees, MCP management, browser access, and chat-channel control across desktop and server surfaces.
