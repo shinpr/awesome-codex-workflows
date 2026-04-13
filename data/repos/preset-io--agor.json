@@ -1,0 +1,21 @@
+{
+  "name": "preset-io/agor",
+  "url": "https://github.com/preset-io/agor",
+  "summary": "Spatial multiplayer control plane for Claude Code, Codex, and Gemini that ties sessions to worktrees, workflow zones, and isolated environments instead of treating agent runs as disconnected terminals.",
+  "codex_relation": "appendix",
+  "category": "Cross-Agent References",
+  "tags": [
+    "cross-agent",
+    "spatial-canvas"
+  ],
+  "signals": [
+    "worktrees",
+    "scheduler",
+    "environment-isolation"
+  ],
+  "evidence": [
+    "Backs its canvas model with real services for worktrees, sessions, scheduler, health monitoring, MCP servers, and board objects rather than a thin UI wrapper.",
+    "Includes a dedicated Codex executor path while keeping the product intentionally cross-agent, making it a strong comparison point rather than a Codex-first framework."
+  ],
+  "status": "active"
+}
