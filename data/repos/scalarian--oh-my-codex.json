@@ -1,6 +1,6 @@
 {
-  "name": "staticpayload/oh-my-codex",
-  "url": "https://github.com/staticpayload/oh-my-codex",
+  "name": "scalarian/oh-my-codex",
+  "url": "https://github.com/scalarian/oh-my-codex",
   "summary": "Codex-native orchestration product built around `.omx/` state, review queues, and tmux team runtime so long-running work can be resumed instead of reassembled from chat history.",
   "codex_relation": "primary",
   "category": "Codex Workflow Frameworks",

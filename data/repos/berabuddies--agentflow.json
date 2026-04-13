@@ -1,6 +1,6 @@
 {
-  "name": "shouc/agentflow",
-  "url": "https://github.com/shouc/agentflow",
+  "name": "berabuddies/agentflow",
+  "url": "https://github.com/berabuddies/agentflow",
   "summary": "Graph-based orchestration runtime for Codex, Claude, and Kimi that treats workflows as dependency graphs, enabling fanout, merge, iterative loops, worktrees, and remote execution.",
   "codex_relation": "adjacent",
   "category": "Workflow Infrastructure & Design",

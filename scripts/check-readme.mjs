@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { generateReadmeContent } from "./lib/readme-generator.mjs";
 
 const before = fs.readFileSync("README.md", "utf8");
-const after = generateReadmeContent(before);
+const after = generateReadmeContent(before, process.cwd());
 
 if (before !== after) {
   console.error("README.md is out of date. Run: node scripts/generate-readme.mjs");

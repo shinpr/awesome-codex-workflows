@@ -40,17 +40,17 @@ These are the repositories where the workflow itself is the product: planning, e
 
 - [am-will/swarms](https://github.com/am-will/swarms) - Dependency-aware workflow skills for Codex and Claude that make parallel execution safer through explicit `depends_on` plans, wave execution, and TDD-oriented validation.
 - [Phlegonlabs/Harness-Engineering-skills](https://github.com/Phlegonlabs/Harness-Engineering-skills) - Repo-backed PRD-to-code workflow skills for Claude and Codex that turn planning into durable project state with phase gates, approval stops, and validation instead of free-form prompt chains.
+- [scalarian/oh-my-codex](https://github.com/scalarian/oh-my-codex) - Codex-native orchestration product built around `.omx/` state, review queues, and tmux team runtime so long-running work can be resumed instead of reassembled from chat history.
 - [shinpr/codex-workflows](https://github.com/shinpr/codex-workflows) - Codex workflows organized around user-value slices so features get designed, tested, and integrated earlier instead of breaking at the end; each slice is grounded in design docs, test skeletons, TDD, and quality gates.
-- [staticpayload/oh-my-codex](https://github.com/staticpayload/oh-my-codex) - Codex-native orchestration product built around `.omx/` state, review queues, and tmux team runtime so long-running work can be resumed instead of reassembled from chat history.
 - [Yeachan-Heo/oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) - Workflow layer for Codex organized around OMX modes like `$deep-interview`, `$ralplan`, `$ralph`, and `$team`, giving one repeatable path from clarification to completion.
 
 ## Workflow Infrastructure & Design
 
 These repositories help people design, support, or operate Codex workflows, even when the workflow itself lives elsewhere.
 
+- [berabuddies/agentflow](https://github.com/berabuddies/agentflow) - Graph-based orchestration runtime for Codex, Claude, and Kimi that treats workflows as dependency graphs, enabling fanout, merge, iterative loops, worktrees, and remote execution.
 - [milisp/codexia](https://github.com/milisp/codexia) - Tauri-based desktop console for Codex and Claude Code, built to run many agent tasks at once with scheduling, worktrees, remote control, and a headless web companion.
 - [SaehwanPark/meta-harness](https://github.com/SaehwanPark/meta-harness) - Codex-oriented adaptation of revfactory/harness for turning orchestration ideas into reusable specialist skills, team specs, and file-based handoffs instead of one-off prompts.
-- [shouc/agentflow](https://github.com/shouc/agentflow) - Graph-based orchestration runtime for Codex, Claude, and Kimi that treats workflows as dependency graphs, enabling fanout, merge, iterative loops, worktrees, and remote execution.
 - [strongdm/leash](https://github.com/strongdm/leash) - Runtime containment and policy layer for AI coding agents that makes Codex workflows safer by wrapping agents in monitored containers and enforcing Cedar policies in real time.
 - [xintaofei/codeg](https://github.com/xintaofei/codeg) - Shared coding workspace for multi-agent teams, tying together session aggregation, worktrees, MCP management, browser access, and chat-channel control across desktop and server surfaces.
 
@@ -65,6 +65,7 @@ These repositories are useful comparisons or integrations. Some are official, bu
 - [jonwiggins/optio](https://github.com/jonwiggins/optio) - PR-lifecycle worker system that turns CI failures, review requests, and merge conflicts into explicit resume actions, pushing tasks from intake to merged PR through a BullMQ-backed state machine.
 - [kingbootoshi/codex-orchestrator](https://github.com/kingbootoshi/codex-orchestrator) - Claude Code plugin and CLI for offloading long-running or parallel coding work to Codex jobs that can be monitored, redirected, and captured through tmux sessions.
 - [OpenAI/codex-plugin-cc](https://github.com/openai/codex-plugin-cc) - Official Claude Code plugin that brings Codex into Claude-centered workflows for review, adversarial review, delegated rescue tasks, and optional review gates.
+- [preset-io/agor](https://github.com/preset-io/agor) - Spatial multiplayer control plane for Claude Code, Codex, and Gemini that ties sessions to worktrees, workflow zones, and isolated environments instead of treating agent runs as disconnected terminals.
 - [stellarlinkco/myclaude](https://github.com/stellarlinkco/myclaude) - Claude-centered multi-agent workflow system that routes execution to Codex, Gemini, Claude, or OpenCode backends through reusable modules like do, omo, BMAD, and SPARV.
 
 <!-- GENERATED:REPO-LIST:END -->
