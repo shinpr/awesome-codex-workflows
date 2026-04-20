@@ -1,0 +1,22 @@
+{
+  "name": "gmickel/flow-next",
+  "url": "https://github.com/gmickel/flow-next",
+  "summary": "Plan-first workflow plugin for Codex, Claude Code, Factory Droid, and OpenCode with in-repo `.flow/` state, dependency-aware task graphs, re-anchoring, and cross-model reviews.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "workflow-state",
+    "task-control"
+  ],
+  "signals": [
+    "durable-state",
+    "dependency-graph",
+    "receipts",
+    "blocked-task-handling"
+  ],
+  "evidence": [
+    "Treats `.flow` as durable workflow state rather than leaving progress inside one chat session.",
+    "Uses dependency-aware execution, receipts, and re-anchoring to steer long-running work before drift accumulates into late-stage review pain."
+  ],
+  "status": "active"
+}

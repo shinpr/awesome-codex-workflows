@@ -1,0 +1,22 @@
+{
+  "name": "Vinix24/vnx-orchestration",
+  "url": "https://github.com/Vinix24/vnx-orchestration",
+  "summary": "Governance-first workflow runtime for Codex, Claude Code, and Gemini CLI that coordinates parallel agents across tmux panes with an append-only receipt ledger, quality gates, worktrees, and automatic context rotation.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "governance",
+    "parallel-execution"
+  ],
+  "signals": [
+    "receipts",
+    "deterministic-gates",
+    "provenance",
+    "queue-reconciliation"
+  ],
+  "evidence": [
+    "Treats Codex as a first-class worker in a provider-neutral runtime rather than as a shallow optional backend.",
+    "Uses receipts, provenance, deterministic gates, worktrees, and reconciliation to control execution drift during parallel runs instead of relying on late review alone."
+  ],
+  "status": "active"
+}
