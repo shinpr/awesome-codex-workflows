@@ -39,9 +39,11 @@ Official building blocks appear here alongside ecosystem standards that help mak
 These are the repositories where the workflow itself is the product: planning, execution, review, and handoff are built into the system rather than added on around it.
 
 - [am-will/swarms](https://github.com/am-will/swarms) - Dependency-aware workflow skills for Codex and Claude that make parallel execution safer through explicit `depends_on` plans, wave execution, and TDD-oriented validation.
+- [gmickel/flow-next](https://github.com/gmickel/flow-next) - Plan-first workflow plugin for Codex, Claude Code, Factory Droid, and OpenCode with in-repo `.flow/` state, dependency-aware task graphs, re-anchoring, and cross-model reviews.
 - [Phlegonlabs/Harness-Engineering-skills](https://github.com/Phlegonlabs/Harness-Engineering-skills) - Repo-backed PRD-to-code workflow skills for Claude and Codex that turn planning into durable project state with phase gates, approval stops, and validation instead of free-form prompt chains.
 - [scalarian/oh-my-codex](https://github.com/scalarian/oh-my-codex) - Codex-native orchestration product built around `.omx/` state, review queues, and tmux team runtime so long-running work can be resumed instead of reassembled from chat history.
 - [shinpr/codex-workflows](https://github.com/shinpr/codex-workflows) - Codex workflows organized around user-value slices so features get designed, tested, and integrated earlier instead of breaking at the end; each slice is grounded in design docs, test skeletons, TDD, and quality gates.
+- [Vinix24/vnx-orchestration](https://github.com/Vinix24/vnx-orchestration) - Governance-first workflow runtime for Codex, Claude Code, and Gemini CLI that coordinates parallel agents across tmux panes with an append-only receipt ledger, quality gates, worktrees, and automatic context rotation.
 - [Yeachan-Heo/oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) - Workflow layer for Codex organized around OMX modes like `$deep-interview`, `$ralplan`, `$ralph`, and `$team`, giving one repeatable path from clarification to completion.
 
 ## Workflow Infrastructure & Design
