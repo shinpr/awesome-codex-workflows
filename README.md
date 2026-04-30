@@ -33,6 +33,7 @@ Official building blocks appear here alongside ecosystem standards that help mak
 - [OpenAI/codex](https://github.com/openai/codex) - Official Codex repository, providing the execution runtime that Codex-native workflow layers and orchestration tools build on.
 - [OpenAI/skills](https://github.com/openai/skills) - Official skill catalog for Codex, showing how reusable instructions, scripts, and resources are packaged into workflow building blocks.
 - [agentsmd/agents.md](https://github.com/agentsmd/agents.md) - Community-led `AGENTS.md` format that gives Codex and neighboring tools a shared way to express repository-local workflow guidance.
+- [OpenAI/symphony](https://github.com/openai/symphony) - Open-source Codex orchestration spec with an Elixir reference implementation, defining issue-tracker-driven workflows where each issue claims a workspace and is driven to a review handoff.
 
 ## Codex Workflow Frameworks
 
@@ -45,12 +46,14 @@ These are the repositories where the workflow itself is the product: planning, e
 - [shinpr/codex-workflows](https://github.com/shinpr/codex-workflows) - Codex workflows organized around user-value slices so features get designed, tested, and integrated earlier instead of breaking at the end; each slice is grounded in design docs, test skeletons, TDD, and quality gates.
 - [Vinix24/vnx-orchestration](https://github.com/Vinix24/vnx-orchestration) - Governance-first workflow runtime for Codex, Claude Code, and Gemini CLI that coordinates parallel agents across tmux panes with an append-only receipt ledger, quality gates, worktrees, and automatic context rotation.
 - [Yeachan-Heo/oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) - Workflow layer for Codex organized around OMX modes like `$deep-interview`, `$ralplan`, `$ralph`, and `$team`, giving one repeatable path from clarification to completion.
+- [yimwoo/hotl-plugin](https://github.com/yimwoo/hotl-plugin) - Human-on-the-loop workflow plugin for Codex, Claude Code, and Cline that turns designs into executable workflow files with per-step verification, persisted run state, human gates for risky steps, and explicit branch/worktree finish decisions.
 
 ## Workflow Infrastructure & Design
 
 These repositories help people design, support, or operate Codex workflows, even when the workflow itself lives elsewhere.
 
 - [berabuddies/agentflow](https://github.com/berabuddies/agentflow) - Graph-based orchestration runtime for Codex, Claude, and Kimi that treats workflows as dependency graphs, enabling fanout, merge, iterative loops, worktrees, and remote execution.
+- [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk) - Git worktree management CLI for parallel AI agent workflows, with lifecycle hooks, merge cleanup, project command approvals, and a reusable skill for operating many Codex or Claude sessions safely.
 - [milisp/codexia](https://github.com/milisp/codexia) - Tauri-based desktop console for Codex and Claude Code, built to run many agent tasks at once with scheduling, worktrees, remote control, and a headless web companion.
 - [SaehwanPark/meta-harness](https://github.com/SaehwanPark/meta-harness) - Codex-oriented adaptation of revfactory/harness for turning orchestration ideas into reusable specialist skills, team specs, and file-based handoffs instead of one-off prompts.
 - [strongdm/leash](https://github.com/strongdm/leash) - Runtime containment and policy layer for AI coding agents that makes Codex workflows safer by wrapping agents in monitored containers and enforcing Cedar policies in real time.
