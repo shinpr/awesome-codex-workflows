@@ -1,0 +1,23 @@
+{
+  "name": "OpenAI/symphony",
+  "url": "https://github.com/openai/symphony",
+  "summary": "Open-source Codex orchestration spec with an Elixir reference implementation, defining issue-tracker-driven workflows where each issue claims a workspace and is driven to a review handoff.",
+  "codex_relation": "primary",
+  "category": "Foundations & Standards",
+  "tags": [
+    "official",
+    "orchestration",
+    "spec"
+  ],
+  "signals": [
+    "codex-app-server",
+    "issue-tracker",
+    "workspace-isolation",
+    "handoff"
+  ],
+  "evidence": [
+    "Defines a language-agnostic Symphony service spec for polling issue trackers, claiming eligible work, creating per-issue workspaces, running Codex app-server sessions, retrying stalled work, and reconciling tracker state.",
+    "The Elixir reference workflow uses Linear states, a persistent workpad, validation requirements, PR feedback sweeps, and Human Review / Merging / Done handoff states rather than supervising individual Codex sessions by hand."
+  ],
+  "status": "experimental"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "yimwoo/hotl-plugin",
+  "url": "https://github.com/yimwoo/hotl-plugin",
+  "summary": "Human-on-the-loop workflow plugin for Codex, Claude Code, and Cline that turns designs into executable workflow files with per-step verification, persisted run state, human gates for risky steps, and explicit branch/worktree finish decisions.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "workflow",
+    "verification"
+  ],
+  "signals": [
+    "codex-plugin",
+    "executable-workflows",
+    "quality-gates",
+    "durable-state",
+    "worktree"
+  ],
+  "evidence": [
+    "Provides Codex plugin/native-skill entry points plus Codex-specific helper scripts for current-step visibility, execution summaries, and final summaries.",
+    "Defines workflow files as execution contracts with action, verify, gate, loop, and retry semantics, while `hotl-rt` persists authoritative run state and reports under `.hotl/`.",
+    "Routes risky or security-sensitive changes through human-review gates and forces explicit finish disposition for merge, publish, keep, discard, or defer."
+  ],
+  "status": "active"
+}

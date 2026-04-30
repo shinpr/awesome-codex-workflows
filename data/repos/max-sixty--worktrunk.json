@@ -1,0 +1,20 @@
+{
+  "name": "max-sixty/worktrunk",
+  "url": "https://github.com/max-sixty/worktrunk",
+  "summary": "Git worktree management CLI for parallel AI agent workflows, with lifecycle hooks, merge cleanup, project command approvals, and a reusable skill for operating many Codex or Claude sessions safely.",
+  "codex_relation": "adjacent",
+  "category": "Workflow Infrastructure & Design",
+  "tags": [
+    "worktrees",
+    "parallel-agents"
+  ],
+  "signals": [
+    "worktree-lifecycle",
+    "hooks",
+    "merge-management"
+  ],
+  "evidence": [
+    "Provides worktree lifecycle automation, hooks, merge cleanup, and agent-oriented documentation for parallel Codex and other CLI-agent workflows."
+  ],
+  "status": "active"
+}
