@@ -1,0 +1,26 @@
+{
+  "name": "tdwhere123/do-it",
+  "url": "https://github.com/tdwhere123/do-it",
+  "summary": "Installable Codex and Claude Code workflow guardrail package that routes work by risk, constrains sub-agent delegation with explicit contracts, and uses Codex hooks plus review, fix, worktree, and verification skills to keep completion claims tied to fresh evidence.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "guardrails",
+    "hooks",
+    "subagents",
+    "verification"
+  ],
+  "signals": [
+    "risk-based-routing",
+    "delegation-contracts",
+    "verification-gates",
+    "review-fix-loop"
+  ],
+  "evidence": [
+    "README frames the package around three workflow moves: route the work, contract the delegation, and prove the result.",
+    "Codex target installs skills, agents, hook scripts, and root hooks.json into CODEX_HOME, with UserPromptSubmit, PreToolUse, PostToolUse, and Stop hooks.",
+    "Subagent orchestration skill requires scope, write ownership, forbidden paths, must-verify facts, stop condition, and return schema.",
+    "Verification gate blocks completion-style claims after edits unless fresh command evidence appears in the recent transcript."
+  ],
+  "status": "active"
+}
