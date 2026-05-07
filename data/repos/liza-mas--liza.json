@@ -1,0 +1,27 @@
+{
+  "name": "liza-mas/liza",
+  "url": "https://github.com/liza-mas/liza",
+  "summary": "Multi-agent coding system with Go supervisors, a behavioral contract, doer/reviewer roles, YAML blackboard state, worktree-managed tasks, and a code-enforced workflow state machine.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "multi-agent",
+    "state-machine",
+    "worktrees",
+    "review-loop"
+  ],
+  "signals": [
+    "behavioral-contract",
+    "doer-reviewer-pairs",
+    "code-enforced-state-machine",
+    "blackboard-yaml",
+    "codex-provider-support"
+  ],
+  "evidence": [
+    "README frames Liza around hardened multi-agent coding, durable maintainability, and a behavioral contract that makes stuck states, approval requests, and evidence explicit.",
+    "The system pairs doer and reviewer roles across planning and coding stages, using submission, comments, verdicts, and revised submissions until approval.",
+    "Go supervisors manage isolated git worktrees, deterministic operations, task state transitions, blackboard YAML, handoff, recovery, and review flow validation.",
+    "Codex is supported through setup/init flags, embedded Codex configuration, provider-aware MCP/tool naming fixes, non-interactive execution fixes, and Codex demo traces."
+  ],
+  "status": "active"
+}

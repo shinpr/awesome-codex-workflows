@@ -1,0 +1,27 @@
+{
+  "name": "sipyourdrink-ltd/bernstein",
+  "url": "https://github.com/sipyourdrink-ltd/bernstein",
+  "summary": "Deterministic Python orchestrator for many CLI coding agents that isolates runs in Git worktrees, enforces janitor verification and quality gates before merge, and includes a Codex CLI adapter.",
+  "codex_relation": "adjacent",
+  "category": "Cross-Agent References",
+  "tags": [
+    "multi-agent",
+    "worktrees",
+    "quality-gates",
+    "audit"
+  ],
+  "signals": [
+    "deterministic-scheduler",
+    "worktree-isolation",
+    "janitor-verification",
+    "quality-gates",
+    "codex-adapter"
+  ],
+  "evidence": [
+    "README frames Bernstein as a deterministic scheduler that decomposes once, then runs agents in parallel, verifies outputs, routes retries, and merges passing work with plain Python.",
+    "The architecture notes explain why scheduling, task assignment, lifecycle management, retry logic, and heartbeat monitoring are kept out of the LLM critical path.",
+    "Quality pipeline documentation and janitor code verify concrete completion signals, configurable gates, cross-model review, and escalation before merge.",
+    "The Codex adapter invokes `codex exec --full-auto --json`, scopes the environment to OpenAI variables, declares OpenAI network endpoints, and documents recent verification against upstream Codex."
+  ],
+  "status": "active"
+}

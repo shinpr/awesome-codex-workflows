@@ -1,0 +1,27 @@
+{
+  "name": "mattpocock/sandcastle",
+  "url": "https://github.com/mattpocock/sandcastle",
+  "summary": "Sandbox runtime for Codex and other coding agents across Docker, Podman, and Vercel, supporting isolated execution, reusable environments, worktree branch strategies, and sequential-reviewer or parallel-planner workflow templates.",
+  "codex_relation": "adjacent",
+  "category": "Workflow Infrastructure & Design",
+  "tags": [
+    "sandbox",
+    "worktrees",
+    "typescript",
+    "review-loop"
+  ],
+  "signals": [
+    "isolated-sandboxes",
+    "branch-strategy",
+    "reusable-sandbox",
+    "parallel-planner-template",
+    "sequential-reviewer-template"
+  ],
+  "evidence": [
+    "README frames Sandcastle around running AFK coding agents in isolated sandboxes, managing branch strategy, and merging commits back.",
+    "The Codex provider runs `codex exec --json`, parses Codex stream events, and is included in the init-time agent registry with a Codex Dockerfile template.",
+    "Templates implement simple-loop, sequential-reviewer, parallel-planner, and parallel-planner-with-review workflows using explicit branches and sandbox lifecycle handling.",
+    "Sandbox lifecycle code handles git identity propagation, hooks, timeouts, commit collection, host sync for isolated providers, dirty worktree preservation, and cleanup."
+  ],
+  "status": "active"
+}
