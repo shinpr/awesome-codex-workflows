@@ -1,0 +1,22 @@
+{
+  "name": "unitedideas/bringyour-mcp",
+  "url": "https://github.com/unitedideas/bringyour-mcp",
+  "summary": "Public no-data MCP metadata, Codex skill, and subagent artifacts for auditing Claude Code to Codex harness migration before Codex edits code.",
+  "codex_relation": "adjacent",
+  "category": "Workflow Infrastructure & Design",
+  "tags": [
+    "migration",
+    "mcp",
+    "skills"
+  ],
+  "signals": [
+    "migration-audit",
+    "validation-notes",
+    "no-data-mcp"
+  ],
+  "evidence": [
+    "Includes a bringyour-migration-auditor Codex skill and harness-migration-auditor subagent for checking instruction scope, hooks, MCP config, skills, and validation notes.",
+    "The remote MCP is documented as no-data and routes users to a local CLI flow, so harness files and secret values stay out of hosted infrastructure."
+  ],
+  "status": "active"
+}
