@@ -1,0 +1,25 @@
+{
+  "name": "boshu2/agentops",
+  "url": "https://github.com/boshu2/agentops",
+  "summary": "DevOps-style operations layer for Codex CLI, Claude Code, Cursor, and OpenCode that persists handoffs, retros, and learnings in `.agents/`, then uses ratchet gates, multi-model councils, pre-mortems, and vibe checks so coding workflows carry evidence and compound knowledge across sessions.",
+  "codex_relation": "primary",
+  "category": "Workflow Infrastructure & Design",
+  "tags": [
+    "agent-ops",
+    "context",
+    "validation"
+  ],
+  "signals": [
+    "codex-skills",
+    "ratchet-gates",
+    "mixed-model-council",
+    "context-injection",
+    "evidence-ledger"
+  ],
+  "evidence": [
+    "Provides first-class Codex install paths alongside Claude Code, Cursor, and OpenCode, and shows Codex as a phase participant in RPI examples rather than a peripheral backend.",
+    "Ships Codex-specific plugin and skill assets under `.codex-plugin`, `.codex`, and `skills-codex/`, including mixed council judge support that can call Codex CLI judges.",
+    "Encodes an opinionated operating layer around `.agents/` records, ratchet progress gates, pre-mortems, vibe checks, councils, and learning flywheels so agent runs carry evidence and constraints across sessions."
+  ],
+  "status": "active"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "josstei/maestro-orchestrate",
+  "url": "https://github.com/josstei/maestro-orchestrate",
+  "summary": "Multi-runtime orchestration framework for Codex, Claude Code, Gemini CLI, and Qwen Code with Codex-native `$maestro` skills, staged Design/Plan/Execute workflows, persistent session state, specialist delegation, approval gates, and review-driven completion rules.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "orchestration",
+    "multi-agent",
+    "codex-plugin"
+  ],
+  "signals": [
+    "codex-plugin",
+    "phase-gates",
+    "persistent-state",
+    "specialist-agents",
+    "validation-gates"
+  ],
+  "evidence": [
+    "Provides a generated Codex runtime under `plugins/maestro/` with `.codex-plugin` metadata, `$maestro:*` skills, MCP configuration, and runtime documentation.",
+    "Defines Express and Standard workflows rather than leaving users to invent the success model; Standard runs Design, Plan, Execute, and Complete phases with approval gates and persistent session output.",
+    "Validation methodology stops on blocking failures, and final review blocks completion when unresolved Critical or Major findings remain."
+  ],
+  "status": "active"
+}
