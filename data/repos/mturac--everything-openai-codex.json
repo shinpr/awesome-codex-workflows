@@ -1,0 +1,21 @@
+{
+  "name": "mturac/everything-openai-codex",
+  "url": "https://github.com/mturac/everything-openai-codex",
+  "summary": "Open-source Codex workflow system with agents, skills, commands, hooks, memory patterns, install profiles, quality gates, and cross-harness adapters for repeatable engineering sessions.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "workflow",
+    "skills",
+    "quality-gates"
+  ],
+  "signals": [
+    "install-profiles",
+    "hooks",
+    "memory"
+  ],
+  "evidence": [
+    "The repository packages Codex-oriented agents, skills, hooks, memory patterns, install profiles, and validation checks as a reusable workflow system."
+  ],
+  "status": "active"
+}
