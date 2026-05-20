@@ -1,0 +1,25 @@
+{
+  "name": "luoyuctl/agenttrace",
+  "url": "https://github.com/luoyuctl/agenttrace",
+  "summary": "Local-first session audit tool for Codex and other coding agents, turning run logs into operational evidence for post-run review, baseline comparison, and CI gates across spend, token use, timing, health, and tool failures.",
+  "codex_relation": "adjacent",
+  "category": "Workflow Infrastructure & Design",
+  "tags": [
+    "observability",
+    "session-audit",
+    "ci"
+  ],
+  "signals": [
+    "codex-plugin",
+    "session-audit",
+    "ci-gates",
+    "baseline-comparison",
+    "health-checks"
+  ],
+  "evidence": [
+    "Ships a Codex plugin manifest and `agenttrace-session-audit` skill so Codex can invoke the local session audit workflow directly.",
+    "Parses Codex CLI session logs, including `.codex/sessions`, archived sessions, and Codex rollout JSONL, with dedicated parser fixtures and tests.",
+    "Turns local agent run logs into repeatable JSON, Markdown, and HTML evidence with health thresholds, critical-session failures, tool-failure-rate gates, and baseline regression comparisons for CI or review handoff."
+  ],
+  "status": "active"
+}
