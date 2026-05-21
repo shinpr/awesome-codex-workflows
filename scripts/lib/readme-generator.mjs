@@ -21,7 +21,7 @@ export function renderGeneratedRepoSection(root = process.cwd()) {
     ],
     [
       "Cross-Agent References",
-      "These repositories are useful comparisons or integrations. Some are official, but the point of view is broader than Codex-first workflow design."
+      "This section covers adjacent projects rather than Codex workflow frameworks: useful workflow patterns, Codex integration approaches, and operational ideas from nearby agent systems."
     ]
   ]);
 
