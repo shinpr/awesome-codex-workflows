@@ -1,19 +1,23 @@
 {
   "name": "dsifry/metaswarm",
   "url": "https://github.com/dsifry/metaswarm",
-  "summary": "Self-improving multi-agent orchestration framework that runs spec-driven work through review gates, adversarial execution loops, and git-native knowledge capture, with optional Codex delegation.",
-  "codex_relation": "appendix",
-  "category": "Cross-Agent References",
+  "summary": "Codex plugin and cross-CLI orchestration framework that runs work through design and plan review gates, BEADS-backed task state, coverage enforcement, and a 4-phase implementation loop.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
   "tags": [
     "cross-agent",
     "orchestration"
   ],
   "signals": [
     "agent-roles",
-    "quality-gates"
+    "quality-gates",
+    "codex-skills",
+    "persistent-state"
   ],
   "evidence": [
-    "Codex is supported, but the repository is broader than Codex-first workflow curation."
+    "Ships `.codex-plugin/plugin.json`, Codex marketplace/local install documentation, a legacy `.codex/install.sh` fallback, AGENTS.md guidance, and named Codex skills such as `$design-review-gate`, `$plan-review-gate`, and `$orchestrated-execution` wired into the documented workflow.",
+    "The workflow theory is stronger than a generic agent router: design review, plan review, coverage gates, adversarial execution review, and BEADS-backed execution state are explicit control points.",
+    "Codex-specific tool mapping and plugin support now connect the Codex path to the same gate/state model used by the rest of the framework."
   ],
   "status": "active"
 }

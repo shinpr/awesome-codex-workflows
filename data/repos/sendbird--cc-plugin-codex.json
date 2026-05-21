@@ -1,0 +1,24 @@
+{
+  "name": "sendbird/cc-plugin-codex",
+  "url": "https://github.com/sendbird/cc-plugin-codex",
+  "summary": "Claude Code bridge for Codex that runs tracked review jobs, rescue tasks, and blocking review gates, with structured ALLOW/BLOCK decisions and worktree-aware review isolation.",
+  "codex_relation": "adjacent",
+  "category": "Cross-Agent References",
+  "tags": [
+    "codex-plugin",
+    "cross-agent",
+    "review-gates"
+  ],
+  "signals": [
+    "codex-plugin",
+    "review-gates",
+    "tracked-jobs",
+    "worktree-review"
+  ],
+  "evidence": [
+    "Provides a real Codex plugin manifest, Codex lifecycle hooks, stop-time review gate, unread-result reminders, tracked job state, and review/adversarial-review/rescue skills.",
+    "Runs Claude Code as a bounded reviewer or rescue worker from inside Codex, parsing structured ALLOW/BLOCK review output and supporting review worktrees and sandbox modes.",
+    "Includes Apache-2.0 license plus NOTICE and tests covering hooks, tracked jobs, state, sandbox modes, structured output, and review worktree behavior."
+  ],
+  "status": "active"
+}

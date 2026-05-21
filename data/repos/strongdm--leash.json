@@ -10,10 +10,12 @@
   ],
   "signals": [
     "policy",
-    "monitoring"
+    "monitoring",
+    "sandboxing"
   ],
   "evidence": [
-    "Adds containment and governance controls that are useful when operating Codex workflows."
+    "Runs Codex and neighboring coding agents inside governed containers with project mounts, forwarded agent credentials, and a Control UI for live monitoring.",
+    "Uses Cedar policy compiled into runtime enforcement across filesystem, process execution, network access, and MCP tool calls, making it a high-signal boundary layer for operating Codex workflows safely."
   ],
   "status": "active"
 }
