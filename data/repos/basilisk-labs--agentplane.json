@@ -1,0 +1,28 @@
+{
+  "name": "basilisk-labs/agentplane",
+  "url": "https://github.com/basilisk-labs/agentplane",
+  "summary": "Git-native harness engineering layer for Codex and other coding agents, organizing work around task contracts, approved plans, verification records, and Agent Change Records tracked directly in Git.",
+  "codex_relation": "adjacent",
+  "category": "Workflow Infrastructure & Design",
+  "tags": [
+    "workflow-control",
+    "evidence",
+    "git",
+    "worktrees"
+  ],
+  "signals": [
+    "agent-change-records",
+    "task-contracts",
+    "verification-evidence",
+    "workflow-contract",
+    "worktree-pr-flow",
+    "recovery-paths"
+  ],
+  "evidence": [
+    "Defines a repo-local lifecycle around coding-agent work: task, plan, approve, implement, verify, and finish, with direct and branch_pr modes.",
+    "Treats `.agentplane/WORKFLOW.md` as an executable control surface with schema validation, required prompt/check/fallback sections, atomic publish, and last-known-good restore.",
+    "Stores task state, PR artifacts, verification records, and Agent Change Records inside the repository so reviewers do not need to rely on chat transcripts or terminal scrollback.",
+    "Includes route-decision, preflight, doctor, restore, ACR validation/check/explain, evidence bundle, CI contract, and release gate surfaces that make failures typed and recoverable."
+  ],
+  "status": "active"
+}

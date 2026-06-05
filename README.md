@@ -55,6 +55,7 @@ These are the repositories where the workflow itself is the product: planning, e
 
 These repositories help people design, support, or operate Codex workflows, even when the workflow itself lives elsewhere.
 
+- [basilisk-labs/agentplane](https://github.com/basilisk-labs/agentplane) - Git-native harness engineering layer for Codex and other coding agents, organizing work around task contracts, approved plans, verification records, and Agent Change Records tracked directly in Git.
 - [berabuddies/agentflow](https://github.com/berabuddies/agentflow) - Graph-based orchestration runtime for Codex, Claude, and Kimi that treats workflows as dependency graphs, enabling fanout, merge, iterative loops, worktrees, and remote execution.
 - [boshu2/agentops](https://github.com/boshu2/agentops) - DevOps-style operations layer for Codex CLI, Claude Code, Cursor, and OpenCode that persists handoffs, retros, and learnings in `.agents/`, then uses ratchet gates, multi-model councils, pre-mortems, and vibe checks so coding workflows carry evidence and compound knowledge across sessions.
 - [luoyuctl/agenttrace](https://github.com/luoyuctl/agenttrace) - Local-first session audit tool for Codex and other coding agents, turning run logs into operational evidence for post-run review, baseline comparison, and CI gates across spend, token use, timing, health, and tool failures.
