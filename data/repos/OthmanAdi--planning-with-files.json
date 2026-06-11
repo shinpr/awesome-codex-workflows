@@ -1,0 +1,24 @@
+{
+  "name": "OthmanAdi/planning-with-files",
+  "url": "https://github.com/OthmanAdi/planning-with-files",
+  "summary": "File-backed planning infrastructure for Codex and other agent CLIs, combining lifecycle hooks, isolated planning sessions, plan attestation, run ledgers, and optional completion gates tied to plan state.",
+  "codex_relation": "primary",
+  "category": "Workflow Infrastructure & Design",
+  "tags": [
+    "planning",
+    "codex-hooks",
+    "completion-gates"
+  ],
+  "signals": [
+    "file-backed-plans",
+    "codex-lifecycle-hooks",
+    "plan-attestation",
+    "structured-ledger",
+    "stop-gate"
+  ],
+  "evidence": [
+    "Ships `.codex/hooks.json` plus Codex hook adapters for SessionStart, UserPromptSubmit, PreToolUse, PermissionRequest, PostToolUse, and Stop, with tests covering the Codex hook payload behavior.",
+    "v3 gated mode combines slug-isolated `.planning/` plan directories, SHA-256 plan attestation, JSONL run ledgers, and a Stop-hook decision table that only blocks when a gated plan has an in-progress phase and ledger progress is still advancing."
+  ],
+  "status": "active"
+}

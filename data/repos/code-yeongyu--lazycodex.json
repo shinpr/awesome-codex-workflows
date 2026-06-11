@@ -1,0 +1,24 @@
+{
+  "name": "code-yeongyu/lazycodex",
+  "url": "https://github.com/code-yeongyu/lazycodex",
+  "summary": "OMO's Codex Light workflow harness built around `ulw-loop`, combining durable goal state, ledger-backed progress tracking, evidence-based completion checks, goal reconciliation, and final quality-gate validation.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "codex-plugin",
+    "workflow-harness",
+    "evidence-gates"
+  ],
+  "signals": [
+    "ulw-loop",
+    "durable-state",
+    "ledger",
+    "quality-gates",
+    "codex-goal-reconciliation"
+  ],
+  "evidence": [
+    "`ulw-loop` persists goals and an append-only ledger under `.omo/ulw-loop`, then refuses completion until every success criterion is recorded as passing.",
+    "Checkpointing reconciles OMO's active goal with Codex goal snapshots, validates final quality-gate JSON, and records structured steering mutations with evidence and rationale."
+  ],
+  "status": "active"
+}

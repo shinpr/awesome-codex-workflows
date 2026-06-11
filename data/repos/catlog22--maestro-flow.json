@@ -1,0 +1,23 @@
+{
+  "name": "catlog22/maestro-flow",
+  "url": "https://github.com/catlog22/maestro-flow",
+  "summary": "Cross-agent workflow orchestrator whose Ralph engine drives sessions through a `status.json` state machine, CLI-enforced step gates, required-reading checks, and state-backed workflow progression.",
+  "codex_relation": "appendix",
+  "category": "Cross-Agent References",
+  "tags": [
+    "cross-agent",
+    "orchestration",
+    "workflow-engine"
+  ],
+  "signals": [
+    "state-machine",
+    "step-gates",
+    "codex-hooks",
+    "mcp"
+  ],
+  "evidence": [
+    "Implements Ralph sessions around `.workflow/.maestro/{session_id}/status.json`, with `maestro ralph next` and `maestro ralph complete` enforcing active-step progression and completion status.",
+    "Resolves Codex skills through the platform-specific scanner, loads required reading before dispatch, and includes Codex hook and MCP install paths inside a broader Claude/Codex/Gemini/OpenCode orchestration system."
+  ],
+  "status": "active"
+}

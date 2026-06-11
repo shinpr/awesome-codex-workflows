@@ -1,0 +1,26 @@
+{
+  "name": "grp06/slop-janitor",
+  "url": "https://github.com/grp06/slop-janitor",
+  "summary": "Codex app-server workflow runner organized around janitor, builder, and goal execution roles, with durable goal ledgers, clean-workspace gates, retry-safe snapshots, and checkpoint commits.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "codex-app-server",
+    "execplan",
+    "goal-runner"
+  ],
+  "signals": [
+    "app-server-json-rpc",
+    "fixed-topology",
+    "artifact-gates",
+    "goal-ledger",
+    "checkpoint-commits",
+    "retry-safe-snapshots"
+  ],
+  "evidence": [
+    "Defines janitor and builder stage topologies around candidate selection, ExecPlan creation/improvement, implementation, review, and parent meta-plan slice reconciliation.",
+    "Goal mode validates `.agent/goals/<id>/brief.md`, `goals.json`, and `ledger.jsonl`, drives Codex through `thread/goal/set/get/clear`, records lifecycle events, and only marks a goal complete after the thread goal reports `complete`.",
+    "The runner enforces clean managed repositories, validates required workflow artifacts and implementation completion, refuses unsupported approvals or interactive requests, and prevents retry when a failed stage leaves ambiguous workspace changes."
+  ],
+  "status": "active"
+}
