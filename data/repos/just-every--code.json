@@ -1,0 +1,24 @@
+{
+  "name": "just-every/code",
+  "url": "https://github.com/just-every/code",
+  "summary": "Codex fork whose Auto Drive orchestration routes milestone work through coordinator-managed helper agents, enforces evidence-backed completion, and pairs autonomous execution with automated review.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "codex-fork",
+    "auto-drive",
+    "auto-review"
+  ],
+  "signals": [
+    "milestone-coordinator",
+    "finish-evidence",
+    "multi-agent-routing",
+    "ghost-commit-review",
+    "snapshot-epoch"
+  ],
+  "evidence": [
+    "Auto Drive runs through `code-auto-drive-core`, where coordinator decisions are parsed from a strict schema covering finish status, milestone prompt, CLI model routing, helper-agent timing, and finish evidence.",
+    "Auto Review captures ghost commits and shares a file lock plus monotonic snapshot epochs across exec, TUI, and Auto Drive paths so reviews do not overlap or continue from stale snapshots."
+  ],
+  "status": "active"
+}

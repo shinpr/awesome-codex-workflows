@@ -1,0 +1,24 @@
+{
+  "name": "robzilla1738/Codex-Workflows",
+  "url": "https://github.com/robzilla1738/Codex-Workflows",
+  "summary": "Workflow-as-code runtime for Codex review fanout, with sandboxed workflow definitions, durable run state, structured finding handoff between phases, validation gates, and pause/resume workflow controls.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "codex-plugin",
+    "workflow-engine",
+    "review-fanout"
+  ],
+  "signals": [
+    "workflow-as-code",
+    "phase-handoff",
+    "durable-state",
+    "json-finding-validation",
+    "mcp"
+  ],
+  "evidence": [
+    "Loads `workflow()` definitions inside a QuickJS sandbox, validates phase and agent schemas, caps concurrency and agent count, and passes selected findings forward through `contextFrom` modes.",
+    "Persists each run under Codex workflow storage with `status.json`, `events.jsonl`, agent prompts/results, control commands, heartbeat/orphan detection, and final reports while exposing CLI, TUI, and MCP controls."
+  ],
+  "status": "active"
+}
