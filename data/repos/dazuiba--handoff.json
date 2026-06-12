@@ -1,0 +1,22 @@
+{
+  "name": "dazuiba/handoff",
+  "url": "https://github.com/dazuiba/handoff",
+  "summary": "Cross-agent task dispatcher: send work to DeepSeek V4 or other agents from inside a Codex session, without losing context. Runs in background via `handoff run`; result returns to the caller automatically.",
+  "codex_relation": "appendix",
+  "category": "Cross-Agent References",
+  "tags": [
+    "cross-agent",
+    "delegation",
+    "deepseek"
+  ],
+  "signals": [
+    "subagents",
+    "background-execution",
+    "session-resume"
+  ],
+  "evidence": [
+    "Ships `handoff-ds.toml`, a Codex subagent definition, so Codex users can say 'have handoff-ds execute the task' and dispatch work directly.",
+    "Runs the delegated task in the background via `handoff run`; the caller receives a `RESULT=<path>` handle and is notified on completion without blocking."
+  ],
+  "status": "active"
+}
