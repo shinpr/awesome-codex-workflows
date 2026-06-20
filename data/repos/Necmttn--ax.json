@@ -1,0 +1,24 @@
+{
+  "name": "Necmttn/ax",
+  "url": "https://github.com/Necmttn/ax",
+  "summary": "Local agent-experience graph for Codex, Claude Code, OpenCode, Cursor, and Pi sessions, turning tool calls, skills, costs, routing, hooks, and telemetry into CLI, dashboard, and MCP query surfaces.",
+  "codex_relation": "primary",
+  "category": "Workflow Infrastructure & Design",
+  "tags": [
+    "observability",
+    "session-recall",
+    "mcp"
+  ],
+  "signals": [
+    "codex-session-ingest",
+    "tool-call-telemetry",
+    "cost-analytics",
+    "routing-analytics",
+    "mcp-query-server"
+  ],
+  "evidence": [
+    "Ingests Codex sessions from `~/.codex/sessions/` alongside other coding-agent harness transcripts.",
+    "Exposes Codex session, tool-call, cost, routing, and skill usage through CLI, dashboard, and read-only MCP query surfaces."
+  ],
+  "status": "active"
+}
