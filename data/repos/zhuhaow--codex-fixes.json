@@ -1,0 +1,25 @@
+{
+  "name": "zhuhaow/codex-fixes",
+  "url": "https://github.com/zhuhaow/codex-fixes",
+  "summary": "Community-maintained Codex issue registry and CLI for diagnosing known bugs, previewing applicable fixes, and applying platform-scoped workarounds.",
+  "codex_relation": "primary",
+  "category": "Workflow Infrastructure & Design",
+  "tags": [
+    "diagnostics",
+    "workarounds",
+    "issue-registry"
+  ],
+  "signals": [
+    "codex-cli",
+    "issue-manifests",
+    "platform-targets",
+    "dry-run",
+    "fix-scripts"
+  ],
+  "evidence": [
+    "Ships a `codex-fixes` CLI with `doctor`, `show`, `apply`, and `--dry-run` commands for inspecting and running Codex-specific fixes.",
+    "Stores issue manifests and platform-scoped fix scripts under `registry/issues/`, with target metadata for Codex CLI and Desktop surfaces.",
+    "Documents a community workflow for reporting real Codex bugs, sharing workarounds, verifying platforms, and marking upstream fixes."
+  ],
+  "status": "active"
+}
