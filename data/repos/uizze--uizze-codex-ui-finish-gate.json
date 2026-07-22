@@ -1,0 +1,26 @@
+{
+  "name": "uizze/uizze-codex-ui-finish-gate",
+  "url": "https://github.com/uizze/uizze-codex-ui-finish-gate",
+  "summary": "Dependency-free Codex UI implementation workflow that makes completion pass through a written design contract, five explicit product states, deterministic behavior checks, rendered desktop and narrow-width review, and an evidence log.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "codex",
+    "frontend",
+    "ui-workflow"
+  ],
+  "signals": [
+    "agents-md",
+    "design-contract",
+    "state-matrix",
+    "behavioral-verifier",
+    "visual-finish-gate",
+    "evidence-log"
+  ],
+  "evidence": [
+    "The documented default path starts Codex in the template, has it read the repository task and guidance, and requires fresh verification plus rendered inspection before completion.",
+    "AGENTS.md, TASK.md, UI_CONTRACT.md, and RUN_LOG.md encode a reusable contract-to-implementation-to-review workflow with explicit completion evidence.",
+    "The dependency-free verifier and its tests intentionally reject the incomplete seed, exercise five query states, and accept a complete fixture without pretending to automate visual judgment."
+  ],
+  "status": "active"
+}
