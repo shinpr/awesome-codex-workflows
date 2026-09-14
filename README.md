@@ -65,6 +65,7 @@ Tools for designing, running, securing, and inspecting Codex workflows, even whe
 - [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) - File-backed planning infrastructure for Codex and other agent CLIs, combining lifecycle hooks, isolated planning sessions, plan attestation, run ledgers, and optional completion gates tied to plan state.
 - [strongdm/leash](https://github.com/strongdm/leash) - Runtime containment and policy layer for AI coding agents that makes Codex workflows safer by wrapping agents in monitored containers and enforcing Cedar policies in real time.
 - [xintaofei/codeg](https://github.com/xintaofei/codeg) - Shared coding workspace for multi-agent teams, tying together session aggregation, worktrees, MCP management, browser access, and chat-channel control across desktop and server surfaces.
+- [yylo-dev/yylo](https://github.com/yylo-dev/yylo) - Git-native control plane for Codex and other coding agents that separates agent execution from integration authority, using dedicated worktrees, task leases, receipts, and guarded ref updates to keep parallel work from overwriting changed state.
 
 ## Cross-Agent References
 
