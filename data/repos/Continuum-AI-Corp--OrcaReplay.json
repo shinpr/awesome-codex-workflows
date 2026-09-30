@@ -1,0 +1,23 @@
+{
+  "name": "Continuum-AI-Corp/OrcaReplay",
+  "url": "https://github.com/Continuum-AI-Corp/OrcaReplay",
+  "summary": "Records a coding-agent run below the harness and replays it offline from the recorded bytes, or forks it from a checkpoint onto a different model with the conversation prefix held fixed.",
+  "codex_relation": "appendix",
+  "category": "Cross-Agent References",
+  "tags": [
+    "cross-agent",
+    "record-replay",
+    "verification"
+  ],
+  "signals": [
+    "checkpoints",
+    "model-comparison",
+    "feedback-loop"
+  ],
+  "evidence": [
+    "README documents OpenAI Responses API capture as the wire format the Codex CLI and the OpenAI Agents SDK default to, and states that a fork stays on the wire format the agent speaks.",
+    "docs/integrations.md gives per-harness notes on what each capture layer records and how the agent is pointed at the proxy.",
+    "Replay is driven from a recorded trace rather than a transcript, so a run can be re-executed or forked at a chosen step instead of only inspected."
+  ],
+  "status": "active"
+}
