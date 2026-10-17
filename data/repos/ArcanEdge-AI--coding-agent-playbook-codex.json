@@ -1,0 +1,27 @@
+{
+  "name": "ArcanEdge-AI/coding-agent-playbook-codex",
+  "url": "https://github.com/ArcanEdge-AI/coding-agent-playbook-codex",
+  "summary": "Installable Codex instructions, skills, and role profiles for scoped engineering work, selective delegation, independent review, and validation, with the main agent retaining responsibility for implementation, integration, and final acceptance.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "skills",
+    "subagents",
+    "review",
+    "verification"
+  ],
+  "signals": [
+    "bounded-delegation",
+    "task-graphs",
+    "evidence-backed-handoffs",
+    "selective-revalidation"
+  ],
+  "evidence": [
+    "The Codex edition installs global instructions into AGENTS.md, self-contained skills, and custom agent profiles; its workflow is instruction-driven rather than a separate orchestration runtime.",
+    "Global instructions keep implementation, integration, verification, and final acceptance with the main agent, with helpers used only for bounded assignments whose benefit justifies coordination and review effort.",
+    "Task-graph orchestration defines dependencies, ownership, acceptance conditions, and verification gates, skips small or linear tasks, and repeats downstream work only when its consumed input changes.",
+    "Helper assignments require finite launch and retry allowances, scoped authority, and primary evidence; the main agent inspects returned work before acceptance and stops unchanged retries without progress.",
+    "Issue #49 supplies the maintainer's one-line summary and operating-model description. Public evidence includes one historical measured run, without a controlled comparison or claims of current speed, cost, or quality gains."
+  ],
+  "status": "active"
+}
