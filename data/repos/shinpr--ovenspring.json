@@ -1,7 +1,7 @@
 {
   "name": "shinpr/ovenspring",
   "url": "https://github.com/shinpr/ovenspring",
-  "summary": "Issue-to-merge software factory for Codex, Claude Code, or OpenCode that works within a repository's existing rules: it merges only the exact commit that passed the base branch's required checks, holds the change categories the owner names by path or in plain words, blocks the commands the owner denies with a per-launch hook, and judges each finding from its own reviewers, Claude Code Review, or the Codex review bot as apply or decline with a reason.",
+  "summary": "Issue-to-merge software factory for Codex and peer CLIs that follows the repository's rules: merges only the commit that passed required checks, holds changes the owner names for approval, blocks denied commands, and judges review-bot findings one by one.",
   "codex_relation": "appendix",
   "category": "Cross-Agent References",
   "tags": [
