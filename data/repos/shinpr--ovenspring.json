@@ -1,0 +1,25 @@
+{
+  "name": "shinpr/ovenspring",
+  "url": "https://github.com/shinpr/ovenspring",
+  "summary": "Issue-to-merge software factory for Codex and peer CLIs that follows the repository's rules: merges only the commit that passed required checks, holds changes the owner names for approval, blocks denied commands, and judges review-bot findings one by one.",
+  "codex_relation": "appendix",
+  "category": "Cross-Agent References",
+  "tags": [
+    "cross-agent",
+    "software-factory",
+    "issue-tracker"
+  ],
+  "signals": [
+    "merge-gate",
+    "finding-judgment",
+    "worktrees",
+    "human-approval-gates"
+  ],
+  "evidence": [
+    "With `merge.by = \"factory\"` the gate merges only the head commit whose checks all succeeded, with GitHub's required approvals in place, and adds no checks of its own; `merge.by = \"owner\"` leaves every merge to the owner.",
+    "Merges wait for the owner's approval on held categories matched by `[held]` path patterns or declared by the design, and on changes described in plain words under `[person_reviews]`, which the design and code reviews judge.",
+    "Any role can run on Codex: launches use `codex exec` with a per-launch `PreToolUse` hook that blocks push, merge, approval, and the commands listed in `[guard] deny`, and roles can load repository skills and appended instructions.",
+    "Findings from the code and security reviews, write-access reviewers, and listed review bots are judged as `apply` or `decline` with the deciding evidence and answered in their thread; the factory waits for Claude Code Review and the Codex review bot before merging."
+  ],
+  "status": "active"
+}
