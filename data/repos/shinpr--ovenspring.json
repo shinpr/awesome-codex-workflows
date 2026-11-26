@@ -1,7 +1,7 @@
 {
   "name": "shinpr/ovenspring",
   "url": "https://github.com/shinpr/ovenspring",
-  "summary": "Issue-to-merge software factory for Codex, Claude Code, or OpenCode that settles each issue's outcome, non-goals, and sourced requirements from the issue as its requester wrote it, judges each review or bot finding as apply or decline on the evidence that decides it, and merges only the exact commit whose required checks passed, holding owner-named change categories for approval in Slack.",
+  "summary": "Issue-to-merge software factory for Codex, Claude Code, or OpenCode that works within a repository's existing rules: it merges only the exact commit that passed the base branch's required checks, holds the change categories the owner names by path or in plain words, blocks the commands the owner denies with a per-launch hook, and judges each finding from its own reviewers, Claude Code Review, or the Codex review bot as apply or decline with a reason.",
   "codex_relation": "appendix",
   "category": "Cross-Agent References",
   "tags": [
@@ -16,10 +16,10 @@
     "human-approval-gates"
   ],
   "evidence": [
-    "A lead agent settles each issue's outcome, non-goals, and requirements with their sources from the issue as written, and a reviewer checks the design against the requester's words, the relevant code, and existing designs before implementation.",
-    "Steps that receive findings judge them with a reviewee-judgment skill and record `apply` or `decline` with the deciding evidence; on rerun the reviewer marks each prior finding resolved, withdrawn, or maintained, and declined review-bot comments get a `Not applied:` reply.",
-    "Any role can run on Codex: launches use `codex exec` with a per-launch `PreToolUse` hook that blocks push, merge, and approval, a `workspace-write` sandbox limited to explicit writable roots, and the user's own skills, MCP servers, and connectors switched off unless allowed.",
-    "The merge gate merges only the commit whose required checks passed, with GitHub's required approvals in place, and holds schema, infrastructure, CI, external-connection, contract, and owner-named changes for approval in Slack."
+    "With `merge.by = \"factory\"` the gate merges only the head commit whose checks all succeeded, with GitHub's required approvals in place, and adds no checks of its own; `merge.by = \"owner\"` leaves every merge to the owner.",
+    "Merges wait for the owner's approval on held categories matched by `[held]` path patterns or declared by the design, and on changes described in plain words under `[person_reviews]`, which the design and code reviews judge.",
+    "Any role can run on Codex: launches use `codex exec` with a per-launch `PreToolUse` hook that blocks push, merge, approval, and the commands listed in `[guard] deny`, and roles can load repository skills and appended instructions.",
+    "Findings from the code and security reviews, write-access reviewers, and listed review bots are judged as `apply` or `decline` with the deciding evidence and answered in their thread; the factory waits for Claude Code Review and the Codex review bot before merging."
   ],
   "status": "active"
 }
