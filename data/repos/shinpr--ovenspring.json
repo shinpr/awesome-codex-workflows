@@ -1,0 +1,25 @@
+{
+  "name": "shinpr/ovenspring",
+  "url": "https://github.com/shinpr/ovenspring",
+  "summary": "Issue-to-merge software factory for Codex, Claude Code, or OpenCode that settles each issue's outcome, non-goals, and sourced requirements from the issue as its requester wrote it, judges each review or bot finding as apply or decline on the evidence that decides it, and merges only the exact commit whose required checks passed, holding owner-named change categories for approval in Slack.",
+  "codex_relation": "appendix",
+  "category": "Cross-Agent References",
+  "tags": [
+    "cross-agent",
+    "software-factory",
+    "issue-tracker"
+  ],
+  "signals": [
+    "merge-gate",
+    "finding-judgment",
+    "worktrees",
+    "human-approval-gates"
+  ],
+  "evidence": [
+    "A lead agent settles each issue's outcome, non-goals, and requirements with their sources from the issue as written, and a reviewer checks the design against the requester's words, the relevant code, and existing designs before implementation.",
+    "Steps that receive findings judge them with a reviewee-judgment skill and record `apply` or `decline` with the deciding evidence; on rerun the reviewer marks each prior finding resolved, withdrawn, or maintained, and declined review-bot comments get a `Not applied:` reply.",
+    "Any role can run on Codex: launches use `codex exec` with a per-launch `PreToolUse` hook that blocks push, merge, and approval, a `workspace-write` sandbox limited to explicit writable roots, and the user's own skills, MCP servers, and connectors switched off unless allowed.",
+    "The merge gate merges only the commit whose required checks passed, with GitHub's required approvals in place, and holds schema, infrastructure, CI, external-connection, contract, and owner-named changes for approval in Slack."
+  ],
+  "status": "active"
+}
