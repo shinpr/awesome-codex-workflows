@@ -1,0 +1,25 @@
+{
+  "name": "DeadInternetStudios/100x-engineer-skill",
+  "url": "https://github.com/DeadInternetStudios/100x-engineer-skill",
+  "summary": "Brief-to-prototype skill suite for Codex, Claude Code, and Cursor that ties \"done\" to saved evidence: ledgered properties go stale when their code changes and count only after a recorded failing run, and `100x finish` refuses to write the report while a property, ask, or planned second-model review round is still open.",
+  "codex_relation": "appendix",
+  "category": "Cross-Agent References",
+  "tags": [
+    "cross-agent",
+    "skills",
+    "verification"
+  ],
+  "signals": [
+    "property-ledger",
+    "evidence-gated-finish",
+    "second-model-review",
+    "finding-triage"
+  ],
+  "evidence": [
+    "`verify/ledger.tsv` stores a hash of the code each property covers. A changed hash marks the row stale, a row without a `verify/red/<id>.txt` holding a `FAIL` line stays unproven, and a row declared exhaustive fails when its checker reports `BOUNDED`.",
+    "Ships a dependency-free explicit-state checker that runs the project's own pure functions over a small model. Checks across blocks and the seeded-defect run are steps the skill instructs; `100x finish` checks the ledger rows, not how the failing run was produced.",
+    "Each finding from the second-model judge is triaged as accept, reject, or defer with a reason that names a commit, file, command, or number, and blockers cannot be deferred. `100x finish` refuses missing planned rounds and an unreviewed run with no logged attempt.",
+    "Codex loads the same `SKILL.md` folders (`100x install --also codex`) and calls the suite as `$100x`, with the workflow driven by the agent-agnostic `100x` CLI."
+  ],
+  "status": "active"
+}
