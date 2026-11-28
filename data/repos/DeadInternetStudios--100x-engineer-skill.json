@@ -1,7 +1,7 @@
 {
   "name": "DeadInternetStudios/100x-engineer-skill",
   "url": "https://github.com/DeadInternetStudios/100x-engineer-skill",
-  "summary": "Brief-to-prototype skill suite for Codex, Claude Code, and Cursor that ties \"done\" to saved evidence: ledgered properties go stale when their code changes and count only after a recorded failing run, and `100x finish` refuses to write the report while a property, ask, or planned second-model review round is still open.",
+  "summary": "Brief-to-prototype skill suite for Codex, Claude Code, and Cursor that ties \"done\" to saved evidence, with a code-hashed property ledger and a `100x finish` gate that refuses the report while proof is stale or missing.",
   "codex_relation": "appendix",
   "category": "Cross-Agent References",
   "tags": [
